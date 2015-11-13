@@ -2,7 +2,7 @@
 /**
  * Write a description of class NumberDisplay here.
  * 
- * @author (your name) 
+ * @author Verónica Serrano 
  * @version (a version number or a date)
  */
 public class NumberDisplay
@@ -23,7 +23,7 @@ public class NumberDisplay
      */
     public void setValue(int numeroInicial)
     {
-        if (numeroInicial <= limit)
+        if (numeroInicial < limit)
         {
             display = numeroInicial;
         }
