@@ -38,4 +38,12 @@ public class NumberDisplay
         String converValue = String.format(actValue, display);
         return converValue;
     }
+    
+    /**
+     * Devuelve el valor actual de display como entero
+     */
+    public int getValue()
+    {
+        return display;
+    }
 }
