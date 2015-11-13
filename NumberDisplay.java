@@ -28,4 +28,14 @@ public class NumberDisplay
             display = numeroInicial;
         }
     }
+    
+    /**
+     * Devuelve el valor actual de display en forma de cadena de dos carácteres
+     */
+    public String getDisplayValue()
+    {
+        String actValue = "&02d";
+        String converValue = String.format(actValue, display);
+        return converValue;
+    }
 }
