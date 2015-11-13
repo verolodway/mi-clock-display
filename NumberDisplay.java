@@ -52,7 +52,8 @@ public class NumberDisplay
      * Incrementa en 1 a display y al alcanzar el límite vuelve al principio
      */public void increment()
     {
-        if (display == limit)
+        int limitTiem = limit -1;
+        if (display == limitTiem)
         {
             display = 0;
         }
