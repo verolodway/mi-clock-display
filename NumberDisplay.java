@@ -46,4 +46,19 @@ public class NumberDisplay
     {
         return display;
     }
+    
+    
+    /**
+     * Incrementa en 1 a display y al alcanzar el límite vuelve al principio
+     */public void increment()
+    {
+        if (display == limit)
+        {
+            display = 0;
+        }
+        else 
+        {
+            display = display + 1;
+        }
+    }
 }
