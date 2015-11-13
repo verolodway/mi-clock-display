@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=limite
+comment0.target=NumberDisplay(int)
+comment0.text=\r\n\ Constructor\ que\ da\ l\u00EDmite\ al\ display\ y\ lo\ inicializa\ a\ 0\r\n
+comment1.params=numeroInicial
+comment1.target=void\ setValue(int)
+comment1.text=\r\n\ Da\ valor\ al\ display\ con\ un\ n\u00FAmero\ introducido\ que\ no\ supere\ el\ l\u00EDmite.\r\n
+numComments=2

@@ -1,0 +1,31 @@
+
+/**
+ * Write a description of class NumberDisplay here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class NumberDisplay
+{
+    // instance variables
+    private int display;
+    private  int limit;
+    /**
+     * Constructor que da límite al display y lo inicializa a 0
+     */
+    public NumberDisplay(int limite)
+    {
+        limit = limite;
+        display = 0;
+    }
+    /**
+     * Da valor al display con un número introducido que no supere el límite.
+     */
+    public void setValue(int numeroInicial)
+    {
+        if (numeroInicial <= limit)
+        {
+            display = numeroInicial;
+        }
+    }
+}
