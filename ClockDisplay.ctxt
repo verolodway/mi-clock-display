@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=horasX\ minutosX
+comment0.target=ClockDisplay(int,\ int)
+comment0.text=\r\n\ Costructor\ con\ dos\ par\u00E1metros\ de\ tipo\ int\ que\ representa\ la\ hora\r\n
+comment1.params=
+comment1.target=ClockDisplay()
+comment1.text=\r\n\ Constructor\ que\ pone\ la\ hora\ en\ 00\:00\ sin\ par\u00E1metros\r\n
+comment2.params=horasX\ minutosX
+comment2.target=void\ setTime(int,\ int)
+comment2.text=\r\n\ M\u00E9todo\ que\ acepta\ los\ int\ y\ fija\ las\ horas\ y\ los\ minutos\r\n
+comment3.params=
+comment3.target=java.lang.String\ getTime()
+comment3.text=\r\n\ M\u00E9todo\ que\ devuelve\ la\ hora\ y\ los\ minutos\ como\ cadena\ de\ 5\ caracteres\r\n
+comment4.params=
+comment4.target=void\ timeTick()
+comment4.text=\r\n\ M\u00E9todo\ que\ hace\ avanzar\ un\ minuto\ la\ hora\ actual\r\n
+numComments=5

@@ -23,7 +23,7 @@ public class NumberDisplay
      */
     public void setValue(int numeroInicial)
     {
-        if (numeroInicial < limit)
+        if (numeroInicial < limit && numeroInicial >= 0)
         {
             display = numeroInicial;
         }
