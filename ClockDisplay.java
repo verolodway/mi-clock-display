@@ -16,18 +16,12 @@ public class ClockDisplay
         private NumberDisplay horas;
     // variable que representa los minutos
         private NumberDisplay minutos;
-    // variable que representa el am
-        private boolean am;
-    // variable que representa el pm
-        private boolean pm;
-    // variable que representa las horasAm
-        private boolean horasAm;
-    // variable que representa las horasPm
-        private boolean horasPm;
+    // variable que determina si queremos un reloj en formato 12 o 24h
+        private boolean formato;
     /**
      * Costructor con dos parámetros de tipo int que representa la hora
      */
-    public ClockDisplay(int horasX, int minutosX)
+    public ClockDisplay(int horasX, int minutosX, boolean formato )
     {
        horas = new NumberDisplay(24);
        minutos = new NumberDisplay(60);
@@ -42,7 +36,7 @@ public class ClockDisplay
     public ClockDisplay()
     {
         horas = new NumberDisplay(24);
-       minutos = new NumberDisplay(60);
+        minutos = new NumberDisplay(60);
         horas.setValue(24);
         minutos.setValue(00);
         horas = new NumberDisplay(12);
@@ -50,14 +44,47 @@ public class ClockDisplay
         horaAct = "12:00 m";
     }
     
+    /**
+     * Cuando formato vale true estamos indicando que queremos el formato en 24h
+     */
+    public void formato (int horasX, int minutosX)
+    {
+        if (formato == true)
+        { 
+            horas.setValue(horasX);
+            minutos.setValue(minutosX);
+            horaAct = horas.getDisplayValue() + ":" + minutos.getDisplayValue();
+       } 
+      
+       
+       else 
+       {
+            if (horasX <= 12)
+        { 
+            horas.setValue(horasX);
+            minutos.setValue(minutosX);
+            horaAct = horas.getDisplayValue() + ":" + minutos.getDisplayValue() + "a.m";
+       } 
+       else if (horasX == 12 & minutosX == 00)
+       {
+           horaAct = 12 + 00 + "m";
+       }
     
+       else 
+       {
+           horas.setValue(horasX-12);
+           minutos.setValue(minutosX);
+           horaAct = horas.getDisplayValue() + ":" + minutos.getDisplayValue() + "p.m";
+       }
+       }
+    }
     
     /**
      * Método que acepta los int y fija las horas y los minutos
      */
     public void setTime(int horasX, int minutosX)
     {
-        if (horasAm == am)
+        if (horasX <= 12)
         { 
             horas.setValue(horasX);
             minutos.setValue(minutosX);
