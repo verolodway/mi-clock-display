@@ -34,10 +34,14 @@ public class NumberDisplay
      */
     public String getDisplayValue()
     {
-        String actValue = "&02d";
-        String converValue = String.format(actValue, display);
-        return converValue;
+        if(limit < 10) {
+            return "0" + display;
+        }
+        else {
+            return "" + display;
+        }
     }
+    
     
     /**
      * Devuelve el valor actual de display como entero
